@@ -101,6 +101,7 @@ if(isset($_GET["keyword"])&& isset($_GET["tipo"]))
  */
 if(isset($_GET["guardar"])){
 
+    $fail =true;
     $username = $_POST["usuario"];
     $password = $_POST["password"];
     $password_confirm = $_POST["passwordConfirm"];
@@ -131,6 +132,7 @@ if(isset($_GET["guardar"])){
                             $usuario_n->setPriviliges(2);
 
                             $usuario_n->createNewUser();
+                            $fail =false;
                             echo "success";
                         }
 
@@ -139,7 +141,8 @@ if(isset($_GET["guardar"])){
             }
         }
     }
-    echo "fail";
+    if($fail)
+        echo "fail";
 
 
 }

@@ -122,15 +122,19 @@
                             data: datos
                         }
                 ).done(function(response){
+                            $("#contenedor").remove("#respuesta");
+
                             if(response=="success")
                             {
-                                $("#contenedor").html("<div class="alert alert-success"><strong>¡Éxito!</strong> El usuario ha sido creado.</div>");
+                                $("#contenedor").prepend("<div class='alert alert-success alert-dissmissible' id='respuesta'>  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>+                                  <strong>¡Éxito!</strong> El usuario ha sido creado.</div>");
                             }
                             else{
-                                $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
+                                $("#contenedor").prepend("<div class='alert alert-danger alert-dismissible' id='respuesta'> <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>" +
+                                        "<strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                             }
                         }).fail(function(){
-                             $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
+                             $("#contenedor").prepend("<div class='alert alert-danger alert-dismissible' id='respuesta'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>" +
+                                     "<strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                         });
 
 
