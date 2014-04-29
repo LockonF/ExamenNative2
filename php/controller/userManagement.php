@@ -70,6 +70,7 @@ $usuarioLista = Usuario::lookupUsers("ck","1");
  * si no, se hace una búsqueda específica
  */
 
+
 if(isset($_GET["s"]))
     {
     if($_GET["s"]=="all")
@@ -78,38 +79,67 @@ if(isset($_GET["s"]))
         echo Usuario::lookupAllUsers();
     }
 }
-else
+
+/*
+ * Busqueda por tipo y palabra clave
+ */
+if(isset($_GET["keyword"])&& isset($_GET["tipo"]))
 {
 
     $kw = $_GET["keyword"];
     $type = $_GET["tipo"];
-    $valKw = v::regex("/^[a-zA-Z0-9_\.]+$/")->length(1,30)->validate($kw);
+    $valKw = v::regex("/^[a-zA-Z0-9_\.]+$/")->length(0,31)->validate($kw);
     $valType = v::numeric()->positive()->between(0,4)->validate(intval($type));
     if($valKw && $valType)
     {
         echo $usuarioLista = Usuario::lookupUsers($kw,$type);
     }
-
-
 }
 
+/*
+ * Generar Nuevo Usuario
+ */
 if(isset($_GET["guardar"])){
-    $username = $_POST["username"];
+
+    $username = $_POST["usuario"];
     $password = $_POST["password"];
+    $password_confirm = $_POST["passwordConfirm"];
     $email = $_POST["email"];
     $nombre = $_POST["nombre"];
-    $paterno = $_POST["apellido-paterno"];
-    $materno = $_POST["apellido-materno"];
+    $paterno = $_POST["apellido_paterno"];
+    $materno = $_POST["apellido_materno"];
 
 
-    $usuario_n = new Usuario();
-    $usuario_n->setUsername($username);
-    $usuario_n->setPassword($password);
-    $usuario_n->getUserData()->setEmail($email);
-    $usuario_n->getUserData()->setApellidop($apellidop);
-    $usuario_n->getUserData()->setApellidom($apellidom);
-    $usuario_n->setPriviliges(2);
+    if(v::regex("/^[a-zA-Z0-9_\.]+$/")->length(5,31)->validate($username))
+    {
+        if(v::string()->length(5,31)->validate($password) && v::equals($password)->validate($password_confirm))
+        {
+            if(v::email()->validate($email))
+            {
+                if(v::alpha()->length(0,49)->validate($nombre))
+                {
+                    if(v::alpha()->length(0,49)->validate($paterno))
+                    {
+                        if(v::alpha()->length(0,49)->validate($materno))
+                        {
+                            $usuario_n = new Usuario();
+                            $usuario_n->setUsername($username);
+                            $usuario_n->setPassword($password);
+                            $usuario_n->getUserData()->setEmail($email);
+                            $usuario_n->getUserData()->setApellidop($paterno);
+                            $usuario_n->getUserData()->setApellidom($materno);
+                            $usuario_n->setPriviliges(2);
+
+                            $usuario_n->createNewUser();
+                            echo "success";
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    echo "fail";
 
 
-    $usuario_n->createNewUser();
 }

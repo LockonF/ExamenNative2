@@ -27,24 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Usuario.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/model/Usuario.php">
+      <file leaf-file-name="forma-Usuario.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="0" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-5.0" vertical-offset="2925" max-vertical-offset="5670">
-              <folding>
-                <marker date="1398748340000" expanded="true" signature="4095:4171" placeholder="Select * fro..Usuario..." />
-                <marker date="1398748340000" expanded="true" signature="5176:5276" placeholder="Select * fro..Usuario..." />
-                <marker date="1398748340000" expanded="true" signature="5407:5554" placeholder="Select * fro..Usuario..." />
-                <marker date="1398748340000" expanded="true" signature="5723:5823" placeholder="Select * fro..Usuario..." />
-              </folding>
+            <state line="126" column="48" selection-start="4072" selection-end="4072" vertical-scroll-proportion="-7.9583335" vertical-offset="1699" max-vertical-offset="3780">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userManagement.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Zebra_DB.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="32" selection-start="398" selection-end="398" vertical-scroll-proportion="0.52261305" vertical-offset="47" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userManagement.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/controller/userManagement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.33333334" vertical-offset="1015" max-vertical-offset="1485">
+            <state line="141" column="16" selection-start="3505" selection-end="3505" vertical-scroll-proportion="-29.166666" vertical-offset="1415" max-vertical-offset="2250">
               <folding />
             </state>
           </provider>
@@ -53,76 +57,13 @@
       <file leaf-file-name="Zebra_Database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/vendor/stefangabos/zebra_database/Zebra_Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4236" column="0" selection-start="167485" selection-end="167485" vertical-scroll-proportion="-8.208333" vertical-offset="62923" max-vertical-offset="63285">
+            <state line="4241" column="0" selection-start="167498" selection-end="167498" vertical-scroll-proportion="-35.416668" vertical-offset="62345" max-vertical-offset="63285">
               <folding>
                 <marker date="1387729727000" expanded="true" signature="124545:124607" placeholder="..." />
                 <marker date="1387729727000" expanded="true" signature="124582:124607" placeholder="..." />
                 <marker date="1387729727000" expanded="true" signature="132075:132129" placeholder="..." />
                 <marker date="1387729727000" expanded="true" signature="132108:132129" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassLoader.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/vendor/composer/ClassLoader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="0" selection-start="8272" selection-end="8272" vertical-scroll-proportion="-5.0" vertical-offset="3840" max-vertical-offset="5640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/controller/session.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="125" selection-end="125" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario_Datos.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/model/Usuario_Datos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="31.416666" vertical-offset="3409" max-vertical-offset="3795">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zebra_DB.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="30" selection-start="396" selection-end="396" vertical-scroll-proportion="-8.666667" vertical-offset="47" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listmaterias.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/controller/listmaterias.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="27" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/model/Session.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="-5.2083335" vertical-offset="190" max-vertical-offset="2175">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="materias.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/materias.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0" vertical-offset="841" max-vertical-offset="5955">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -193,7 +134,6 @@
         <option value="$PROJECT_DIR$/view/js/gestion-usuarios.js" />
         <option value="$PROJECT_DIR$/view/js/validaciones.js" />
         <option value="$PROJECT_DIR$/view/Scripts/formaUsuario.html" />
-        <option value="$PROJECT_DIR$/view/forma-Usuario.html" />
         <option value="$PROJECT_DIR$/php/model/Materia.php" />
         <option value="$PROJECT_DIR$/php/composer.json" />
         <option value="$PROJECT_DIR$/php/vendor/composer/autoload_classmap.php" />
@@ -215,8 +155,9 @@
         <option value="$PROJECT_DIR$/php/controller/listmaterias.php" />
         <option value="$PROJECT_DIR$/php/model/Session.php" />
         <option value="$PROJECT_DIR$/js/materias.js" />
-        <option value="$PROJECT_DIR$/php/model/Zebra_DB.php" />
+        <option value="$PROJECT_DIR$/view/forma-Usuario.html" />
         <option value="$PROJECT_DIR$/php/controller/userManagement.php" />
+        <option value="$PROJECT_DIR$/php/model/Zebra_DB.php" />
       </list>
     </option>
   </component>
@@ -309,6 +250,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ExamenNative2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExamenNative" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExamenNative2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,7 +476,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16558966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24878837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31610942" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -559,16 +514,6 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/php/controller/userManagement.php</url>
-          <line>15</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/php/controller/userManagement.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/php/model/Zebra_DB.php</url>
           <line>8</line>
           <option name="timeStamp" value="77" />
@@ -582,20 +527,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="109" />
+      <option name="time" value="113" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="73" selection-start="999" selection-end="999" vertical-scroll-proportion="-1.7554806" vertical-offset="1416" max-vertical-offset="2520" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="83615" selection-end="83615" vertical-scroll-proportion="0.09724473" vertical-offset="0" max-vertical-offset="617" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/mas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060" />
@@ -668,7 +603,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/js/gestion-usuarios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="39" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2175" />
+        <state line="25" column="39" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2175">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/css/bootstrap.css">
@@ -695,11 +632,6 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="7" selection-start="9364" selection-end="9364" vertical-scroll-proportion="0.0" vertical-offset="3159" max-vertical-offset="3555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/npm-debug.log">
@@ -737,11 +669,6 @@
         <state line="199" column="0" selection-start="26098" selection-end="26098" vertical-scroll-proportion="-124.375" vertical-offset="0" max-vertical-offset="3210" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="26" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1140" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/gestion-usuarios.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="63" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.85675675" vertical-offset="598" max-vertical-offset="2730">
@@ -762,11 +689,6 @@
     <entry file="file://$PROJECT_DIR$/view/preguntas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="37" selection-start="3958" selection-end="3958" vertical-scroll-proportion="4.1122713" vertical-offset="0" max-vertical-offset="3765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="406" selection-end="449" vertical-scroll-proportion="0.530303" vertical-offset="0" max-vertical-offset="1485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/examen.php">
@@ -837,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="30" selection-start="396" selection-end="396" vertical-scroll-proportion="-8.666667" vertical-offset="47" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="272" column="0" selection-start="8272" selection-end="8272" vertical-scroll-proportion="-5.0" vertical-offset="3840" max-vertical-offset="5640">
@@ -858,16 +773,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/validaciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gestion-usuarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1658031" vertical-offset="450" max-vertical-offset="2175">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/model/Usuario_Datos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="31.416666" vertical-offset="3409" max-vertical-offset="3795">
+        <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="-2.0828729" vertical-offset="3409" max-vertical-offset="3795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/model/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="0" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.3116883" vertical-offset="2925" max-vertical-offset="5670">
+          <folding>
+            <marker date="1398748340000" expanded="true" signature="-1:-1" placeholder="Select * fro..Usuario..." />
+            <marker date="1398748340000" expanded="true" signature="-1:-1" placeholder="Select * fro..Usuario..." />
+            <marker date="1398748340000" expanded="true" signature="-1:-1" placeholder="Select * fro..Usuario..." />
+            <marker date="1398748340000" expanded="true" signature="-1:-1" placeholder="Select * fro..Usuario..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="26" selection-start="2503" selection-end="2503" vertical-scroll-proportion="2.2371638" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="35" selection-start="2815" selection-end="2821" vertical-scroll-proportion="0.398827" vertical-offset="929" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/model/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="0.31407034" vertical-offset="190" max-vertical-offset="2175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="48" selection-start="4072" selection-end="4072" vertical-scroll-proportion="-7.9583335" vertical-offset="1699" max-vertical-offset="3780">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/vendor/stefangabos/zebra_database/Zebra_Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4236" column="0" selection-start="167485" selection-end="167485" vertical-scroll-proportion="-8.208333" vertical-offset="62923" max-vertical-offset="63285">
+        <state line="4241" column="0" selection-start="167498" selection-end="167498" vertical-scroll-proportion="-35.416668" vertical-offset="62345" max-vertical-offset="63285">
           <folding>
             <marker date="1387729727000" expanded="true" signature="124545:124607" placeholder="..." />
             <marker date="1387729727000" expanded="true" signature="124582:124607" placeholder="..." />
@@ -877,28 +848,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Session.php">
+    <entry file="file://$PROJECT_DIR$/php/controller/userManagement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="-5.2083335" vertical-offset="190" max-vertical-offset="2175">
+        <state line="141" column="16" selection-start="3505" selection-end="3505" vertical-scroll-proportion="-29.166666" vertical-offset="1415" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Usuario.php">
+    <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="0" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-5.0" vertical-offset="2925" max-vertical-offset="5670">
-          <folding>
-            <marker date="1398748340000" expanded="true" signature="4095:4171" placeholder="Select * fro..Usuario..." />
-            <marker date="1398748340000" expanded="true" signature="5176:5276" placeholder="Select * fro..Usuario..." />
-            <marker date="1398748340000" expanded="true" signature="5407:5554" placeholder="Select * fro..Usuario..." />
-            <marker date="1398748340000" expanded="true" signature="5723:5823" placeholder="Select * fro..Usuario..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/userManagement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.33333334" vertical-offset="1015" max-vertical-offset="1485">
+        <state line="22" column="32" selection-start="398" selection-end="398" vertical-scroll-proportion="0.52261305" vertical-offset="47" max-vertical-offset="630">
           <folding />
         </state>
       </provider>

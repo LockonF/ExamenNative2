@@ -124,15 +124,13 @@
                 ).done(function(response){
                             if(response=="success")
                             {
-                                window.location.replace(".php");
+                                alert(response);
                             }
                             else{
-                                $("#error").empty();
-                                $("#error").append('<div class="alert alert-danger alert-dismissable"><button type=button class=close data-dismiss=alert aria-hidden=true>&times;</button><strong>Error!</strong> Usuario o Contrase&ntilde;a Incorrectos</div>');
+                                $("#contenedor").html(response);
                             }
                         }).fail(function(){
-                            $("#error").empty();
-                            $("#error").append('<div class="alert alert-danger alert-dismissable"><button type=button class=close data-dismiss=alert aria-hidden=true>&times;</button><strong>Error!</strong> Usuario o Contrase&ntilde;a Incorrectos</div>');
+                            alert("Pues ya chingo a su madre la DB");
                         });
 
 
