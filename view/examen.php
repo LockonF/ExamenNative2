@@ -68,10 +68,10 @@ if(!Session::isAuthenticated())
 
           <ul class="ca-menu">
                     <li>
-                        <a href="Signin.php">
+                        <a href="../php/controller/signout.php">
                            <div class="ca-content">
                               
-                                <h2 class="ca-main">Iniciar Sesion</h2>
+                                <h2 class="ca-main">Cerrar Sesión</h2>
                                 <span class="ca-icon">U</span>
                                 <h3 class="ca-sub"><br>Mi perfil</h3>
                                  
