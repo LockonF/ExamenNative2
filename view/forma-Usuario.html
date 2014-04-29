@@ -124,13 +124,13 @@
                 ).done(function(response){
                             if(response=="success")
                             {
-                                $("#contenedor").html("<div class="alert alert-success"><strong>¡Éxito!</strong> El usuario ha sido creado.</div>");
+                                $("#contenedor").prepend("<div class='alert alert-success'><strong>¡Éxito!</strong> El usuario ha sido creado.</div>");
                             }
                             else{
-                                $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
+                                $("#contenedor").prepend("<div class='alert alert-danger'><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                             }
                         }).fail(function(){
-                             $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
+                             $("#contenedor").prepend("<div class='alert alert-danger'><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                         });
 
 
