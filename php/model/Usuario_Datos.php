@@ -175,7 +175,7 @@ class Usuario_Datos {
         {
             $db = new Zebra_DB();
             $db = $db->getDBObject();
-            $data = $db->dlookup("*","usuario_datos","idUser = ?",array($username));
+            $data = $db->dlookup("*","Usuario_datos","idUser = ?",array($username));
             $this->idUser= $data["idUser"];
             $this->nombre= $data["nombre"];
             $this->apellidop = $data["apellidop"];
@@ -197,7 +197,7 @@ class Usuario_Datos {
     {
            $db =  new Zebra_DB();
            $db =  $db->getDBObject();
-           if($db->insert("usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
+           if($db->insert("Usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
            "apellidom"=>$this->apellidom,"fechanac"=>$this->fechanac,"fechareg"=>$this->fechareg, "fechasusc"=>$this->fechasusc,
            "escuela" => $this->escuela, "email"=>$this->email)))
            {
@@ -216,7 +216,7 @@ class Usuario_Datos {
     {
          $db =  new Zebra_DB();
          $db =  $db->getDBObject();
-         if(($db->update("usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
+         if(($db->update("Usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
              "apellidom"=>$this->apellidom,"fechanac"=>$this->fechanac,"fechareg"=>$this->fechareg, "fechasusc"=>$this->fechasusc,
              "escuela" => $this->escuela, "email"=>$this->email),"idUser = ?",array($username))))
          {
@@ -233,7 +233,7 @@ class Usuario_Datos {
     {
         $db = new Zebra_DB();
         $db = $db->getDBObject();
-        if($db->delete("usuario_datos","idUser = ?",array($username)))
+        if($db->delete("Usuario_datos","idUser = ?",array($username)))
         {
             $db->close();
             return true;
