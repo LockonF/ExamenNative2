@@ -92,7 +92,7 @@
 							<label class="col-md-4 control-label" for="guardar-cambios"></label>
 							<div class="col-md-8">
 								<button id="guardar-cambios" name="guardar-cambios" class="btn btn-success">Guardar Cambios</button>
-								<button id="cancelar-cambios" name="cancelar-cambios" class="btn btn-danger">Cancelar</button>
+								<button id="cancelar_cambios" name="cancelar_cambios" class="btn btn-danger">Cancelar</button>
 							</div>
 						</div>
 
@@ -106,6 +106,17 @@
 </div>
 
 <script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        $('#cancelar_cambios').click(function(event){
+            event.preventDefault();
+            $('#forma-crear').trigger("reset");;
+        });
+
+
+    });
+
 	$(document).ready(function() {
 		$('#forma-crear').bootstrapValidator({
 			message: 'Formato de Campo Incorrecto',

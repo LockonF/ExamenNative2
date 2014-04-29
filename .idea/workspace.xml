@@ -30,7 +30,7 @@
       <file leaf-file-name="forma-Usuario.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="0" selection-start="0" selection-end="7773" vertical-scroll-proportion="-2.0662982" vertical-offset="2833" max-vertical-offset="3840">
+            <state line="113" column="29" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.24404761" vertical-offset="1613" max-vertical-offset="4005">
               <folding />
             </state>
           </provider>
@@ -542,7 +542,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="114" />
+      <option name="time" value="115" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -876,7 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="0" selection-start="0" selection-end="7773" vertical-scroll-proportion="-2.0662982" vertical-offset="2833" max-vertical-offset="3840">
+        <state line="113" column="29" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.24404761" vertical-offset="1613" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>
