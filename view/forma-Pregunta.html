@@ -138,7 +138,6 @@
         <!-- :form -->
     </div>
 </div>
-
 <script type="text/javascript">
     $(document).ready(function() {
         $('#forma-crear').bootstrapValidator({
@@ -149,112 +148,90 @@
                 validating: 'glyphicon glyphicon-refresh'
             },
             fields: {
-                usuario: {
-                    message: 'Usuario no valido',
+                oracion: {
+                    message: 'Oración no valida',
                     validators: {
                         notEmpty: {
-                            message: 'El usuario es obligatorio'
+                            message: 'La oración es obligatoria'
                         },
                         stringLength: {
                             min: 6,
-                            max: 30,
-                            message: 'el usuario debe mas de 6 y menos de  30 caracters de longitud'
-                        },
-                        regexp: {
-                            regexp: /^[a-zA-Z0-9_\.]+$/,
-                            message: 'El usuario solo puede contener caracteres alfanumericos punto y / ò guion bajo'
+                            max: 450,
+                            message: 'el Oración  debe mas de 6 y menos de  450 caracters de longitud'
                         }
                     }
                 },
-                nombre: {
-                    message: 'Nombre no Vàlido',
+                opc1: {
+                    message: 'Opción no Vàlida',
                     validators: {
                         notEmpty: {
-                            message: 'El nombre no puede estar Vacio'
+                            message:  'La opción no puede estar vacía'
                         },
                         stringLength: {
                             min: 1,
-                            max: 50,
-                            message: 'Tu nombre no puede tener más de 50 caracteres'
-                        },
-                        regexp: {
-                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
-                            message: 'El nombre solo acepta caracteres alfanumericos'
+                            max: 450,
+                            message: 'Tu opción no puede tener más de 450 caracteres'
                         }
                     }
                 },
-                apellido_paterno: {
-                    message: 'Apellido Paterno no Valido',
+                opc2: {
+                    message: 'Opción no Vàlida',
+                    validators: {
+                        notEmpty: {
+                            message: 'La opción no puede estar vacía'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 450,
+                            message: 'Tu opción no puede tener más de 450 caracteres'
+                        }
+                    }
+                },
+                opc3: {
+                    message: 'Opción no Vàlida',
+                    validators: {
+                        notEmpty: {
+                            message:  'La opción no puede estar vacía'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 450,
+                            message: 'Tu opción no puede tener más de 450 caracteres'
+                        }
+                    }
+                },
+                opc4: {
+                    message: 'Opción no Vàlida',
+                    validators: {
+                        notEmpty: {
+                            message: 'La opción no puede estar vacía'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 450,
+                            message: 'Tu opción no puede tener más de 450 caracteres'
+                        }
+                    }
+                },
+                just: {
+                    message: 'Justificación no Valida',
                     validators: {
                         notEmpty: {
                             message: 'Apellido paterno Obligatorio'
                         },
                         stringLength: {
                             min: 1,
-                            max: 50,
-                            message: 'Tu apellido no puede tener más de 50 caracteres'
-                        },
-                        regexp: {
-                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
-                            message: 'El apellido solo acepta caracteres alfanumericos'
+                            max: 450,
+                            message: 'Tu Justificación no puede tener más de 50 caracteres'
                         }
-                    }
-                },
-                apellido_materno    : {
-                    message: 'Apellido Matreno no Valido',
-                    validators: {
-                        notEmpty: {
-                            message: 'Apellido materno Obligatorio'
-                        },
-                        stringLength: {
-                            min: 1,
-                            max: 50,
-                            message: 'Tu Apellido no puede tener más de 50 caracteres'
-                        },
-                        regexp: {
-                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
-                            message: 'El apellido solo puede contener caracteres alfanumericos'
-                        }
-                    }
-                },
 
-
-                email: {
-                    validators: {
-                        notEmpty: {
-                            message: 'el correo electronico no puede quedar vacio'
-                        },
-                        emailAddress: {
-                            message: 'Anote una direccion de correo valida'
-                        }
-                    }
-                },
-                password: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Contraseña Obligatoria'
-                        },
-                        identical: {
-                            field: 'passwordConfirm',
-                            message: 'Los campos no coinciden'
-                        }
-                    }
-                },
-                passwordConfirm: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Confirmaciòn de paswoord obligatoria'
-                        },
-                        identical: {
-                            field: 'password',
-                            message: 'Los campos no coinciden'
-                        }
                     }
                 }
             }
         });
     });
 </script>
+
 
 </body>
 </html>
