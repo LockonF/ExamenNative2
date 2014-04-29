@@ -7,6 +7,7 @@
  */
 require "../model/Usuario.php";
 require "../model/Usuario_Datos.php";
+require "../model/Session.php";
 use \Respect\Validation\Validator as v;
 
 
@@ -73,6 +74,7 @@ if(isset($_GET["s"]))
     {
     if($_GET["s"]=="all")
     {
+        if(Session::getPriviliges()==1)
         echo Usuario::lookupAllUsers();
     }
 }
