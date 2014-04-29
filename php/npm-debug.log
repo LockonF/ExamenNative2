@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'bower' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'bower', null ]
+7 verbose cache add name=undefined spec="bower" args=["bower",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'bower',
+8 verbose parsed url   path: 'bower',
+8 verbose parsed url   href: 'bower' }
+9 silly lockFile 206e3ce5-bower bower
+10 verbose lock bower /Users/LockonDaniel/.npm/206e3ce5-bower.lock
+11 silly lockFile 206e3ce5-bower bower
+12 verbose addNamed [ 'bower', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 1240aab1-bower bower@
+15 verbose lock bower@ /Users/LockonDaniel/.npm/1240aab1-bower.lock
+16 silly lockFile 1240aab1-bower bower@
+17 error Error: EACCES, open '/Users/LockonDaniel/.npm/1240aab1-bower.lock'
+17 error  { [Error: EACCES, open '/Users/LockonDaniel/.npm/1240aab1-bower.lock']
+17 error   errno: 3,
+17 error   code: 'EACCES',
+17 error   path: '/Users/LockonDaniel/.npm/1240aab1-bower.lock' }
+18 error Please try running this command again as root/Administrator.
+19 error System Darwin 13.1.0
+20 error command "node" "/usr/local/bin/npm" "install" "-g" "bower"
+21 error cwd /Users/LockonDaniel/PHP/ExamenNative/php
+22 error node -v v0.10.12
+23 error npm -v 1.2.32
+24 error path /Users/LockonDaniel/.npm/1240aab1-bower.lock
+25 error code EACCES
+26 error errno 3
+27 error stack Error: EACCES, open '/Users/LockonDaniel/.npm/1240aab1-bower.lock'
+28 verbose exit [ 3, true ]
