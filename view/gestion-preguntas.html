@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+	<div id='contenedor'>
+		<ul class="nav nav-pills nav-justified">
+			<li>Hola</li>
+			<li>Hola</li>
+			<li>Hola</li>
+		</ul>
+		<script id="pregunta-template" type="text/template">
+
+		<td><%= idPregunta %></td>
+		<td><%=oracion %></td>
+		<td><%= opc1 %></td>
+		<td><%= opc2 %></td>
+        <td> <%= opc3 %></td>
+        <td> <%= opc4 %></td>
+        <td> <%= just %></td>
+        <td> <%= tema %></td>
+        <td> <%= opc  %></td>
+        <td> <%= grafico %></td>
+		<td>
+		<a href='editar-preguntas.php?id=<%=id%>'>Editar Información</a>
+		<a href='eliminar-preguntas.php?id=<%=id%>'>Eliminar</a>
+		</td>
+		</script>
+	</div>
+	
+	<!-- Cargar Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src='js/underscore-min.js'></script>
+	<script type="text/javascript" src='js/backbone-min.js'></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/principal.js"></script>
+</body>
+</html>

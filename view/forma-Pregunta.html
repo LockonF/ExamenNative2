@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrapValidator.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <!-- form: -->
+        <section>
+            <div class="page-header">
+                <h1>Bootstrap Validate plugin</h1>
+            </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <form class="form-horizontal" id="forma-crear">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Crear Pregunta</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="oracion">Oraci&oacute;n</label>
+                            <div class="col-md-4">
+                                <input id="oracion" name="oracion" type="text" placeholder="" class="form-control input-md" >
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="opc1">Primera opci&oacute;n </label>
+                            <div class="col-md-4">
+                                <input id="opc1" name="opc1" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="opc2">Segunda opci&oacute;n </label>
+                            <div class="col-md-4">
+                                <input id="opc2" name="opc2" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="opc3">Tercera opci&oacute;n </label>
+                            <div class="col-md-4">
+                                <input id="opc3" name="opc3" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="opc4">Cuarta opci&oacute;n </label>
+                            <div class="col-md-4">
+                                <input id="opc4" name="opc4" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="just">Justificaci&oacute;n</label>
+                            <div class="col-md-4">
+                                <input id="just" name="just" type="text" placeholder="" class="form-control input-md" >
+                             </div>
+                        </div>
+                        <!-- List Group -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="tema">Tema</label>
+                            <div class="col-md-4">
+                                <ul class="list-group">
+                                    <li class="list-group-item" value="1">Comunicaci&oacute;n Español</li>
+                                    <li class="list-group-item" value="2">Comunicaci&oacute;n Ingl&eacute;s</li>
+                                    <li class="list-group-item" value="3">Habilidad Matematica</li>
+                                    <li class="list-group-item" value="4">Biolog&iacute;a</li>
+                                    <li class="list-group-item" value="5">Qu&iacute;mica</li>
+                                    <li class="list-group-item" value="6">F&iacute;sica</li>
+                                    <li class="list-group-item" value="7">Matem&aacute;ticas</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- List Group -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="opcc">Opci&oacute;n Correcta</label>
+                            <div class="col-md-4">
+                                <ul class="list-group">
+                                    <li class="list-group-item" value="1">A</li>
+                                    <li class="list-group-item" value="2">B</li>
+                                    <li class="list-group-item" value="3">C</li>
+                                    <li class="list-group-item" value="4">D</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- File input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="grafico">Gr&aacute;fico</label>
+                            <div class="col-md-4">
+                                <input id="grafico" name="grafico" type="file" placeholder="" class="form-control input-md" >
+
+                            </div>
+                        </div>
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="guardar-cambios"></label>
+                            <div class="col-md-8">
+                                <button id="guardar-cambios" name="guardar-cambios" class="btn btn-success">Guardar Cambios</button>
+                                <button id="cancelar-cambios" name="cancelar-cambios" class="btn btn-danger">Cancelar</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </section>
+        <!-- :form -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#forma-crear').bootstrapValidator({
+            message: 'Formato de Campo Incorrecto',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                usuario: {
+                    message: 'Usuario no valido',
+                    validators: {
+                        notEmpty: {
+                            message: 'El usuario es obligatorio'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: 'el usuario debe mas de 6 y menos de  30 caracters de longitud'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_\.]+$/,
+                            message: 'El usuario solo puede contener caracteres alfanumericos punto y / ò guion bajo'
+                        }
+                    }
+                },
+                nombre: {
+                    message: 'Nombre no Vàlido',
+                    validators: {
+                        notEmpty: {
+                            message: 'El nombre no puede estar Vacio'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 50,
+                            message: 'Tu nombre no puede tener más de 50 caracteres'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
+                            message: 'El nombre solo acepta caracteres alfanumericos'
+                        }
+                    }
+                },
+                apellido_paterno: {
+                    message: 'Apellido Paterno no Valido',
+                    validators: {
+                        notEmpty: {
+                            message: 'Apellido paterno Obligatorio'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 50,
+                            message: 'Tu apellido no puede tener más de 50 caracteres'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
+                            message: 'El apellido solo acepta caracteres alfanumericos'
+                        }
+                    }
+                },
+                apellido_materno    : {
+                    message: 'Apellido Matreno no Valido',
+                    validators: {
+                        notEmpty: {
+                            message: 'Apellido materno Obligatorio'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 50,
+                            message: 'Tu Apellido no puede tener más de 50 caracteres'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ \.]+$/,
+                            message: 'El apellido solo puede contener caracteres alfanumericos'
+                        }
+                    }
+                },
+
+
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'el correo electronico no puede quedar vacio'
+                        },
+                        emailAddress: {
+                            message: 'Anote una direccion de correo valida'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Contraseña Obligatoria'
+                        },
+                        identical: {
+                            field: 'passwordConfirm',
+                            message: 'Los campos no coinciden'
+                        }
+                    }
+                },
+                passwordConfirm: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Confirmaciòn de paswoord obligatoria'
+                        },
+                        identical: {
+                            field: 'password',
+                            message: 'Los campos no coinciden'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
