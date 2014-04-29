@@ -243,18 +243,18 @@ class Usuario {
             //Usuarios
             if($type==1)
             {
-                $db->query("Select * from Usuario u left join usuario_datos uc on u.username = uc.idUser where u.username like ?",array("%".$username."%"));
+                $db->query("Select * from Usuario u left join Usuario_datos uc on u.username = uc.idUser where u.username like ?",array("%".$username."%"));
             }
             //Nombre
             if($type==2)
             {
-                $db->query("Select * from Usuario u left join usuario_datos uc on u.username = uc.idUser where (uc.nombre like ? or uc.apellidop like ? or uc.apellidom like ?)",array("%".$username."%","%".$username."%","%".$username."%"));
+                $db->query("Select * from Usuario u left join Usuario_datos uc on u.username = uc.idUser where (uc.nombre like ? or uc.apellidop like ? or uc.apellidom like ?)",array("%".$username."%","%".$username."%","%".$username."%"));
 
             }
             //Escuela
             if($type==3)
             {
-                $db->query("Select * from Usuario u left join usuario_datos uc on u.username = uc.idUser where uc.escuela like ?",array("%".$username."%"));
+                $db->query("Select * from Usuario u left join Usuario_datos uc on u.username = uc.idUser where uc.escuela like ?",array("%".$username."%"));
 
             }
 

@@ -1,0 +1,16 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "author's name",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {
+        "stefangabos/zebra_database": "2.8.4",
+        "rych/phpass": "3.x-dev"
+    }
+}
