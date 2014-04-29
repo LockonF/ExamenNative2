@@ -124,13 +124,13 @@
                 ).done(function(response){
                             if(response=="success")
                             {
-                                alert(response);
+                                $("#contenedor").html("<div class="alert alert-success"><strong>¡Éxito!</strong> El usuario ha sido creado.</div>");
                             }
                             else{
-                                $("#contenedor").html(response);
+                                $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                             }
                         }).fail(function(){
-                            alert("Pues ya chingo a su madre la DB");
+                             $("#contenedor").html("<div class="alert alert-danger"><strong>ERROR</strong> No hemos podido guardar los datos. Inténtalo de nuevo.</div>");
                         });
 
 
