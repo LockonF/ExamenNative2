@@ -103,7 +103,7 @@ VerUsuariosRender = function(){
 }
 
 CrearUsuarioRender = function(){
-	$("#contenedor").html($("#vista-crear-usuario").html())
+	$("#contenedor").load('forma-Usuario.html');
 }
 
 $("#tab-buscar-usuario").on("click",function(){
