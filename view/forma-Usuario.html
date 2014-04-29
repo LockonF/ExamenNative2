@@ -114,6 +114,29 @@
 				invalid: 'glyphicon glyphicon-remove',
 				validating: 'glyphicon glyphicon-refresh'
 			},
+            submitHandler: function(validator, form, submitButton) {
+                datos = $("#forma-crear").serialize();
+                $.ajax({
+                            url:"../php/controller/userManagement.php?guardar=1",
+                            type: "post",
+                            data: datos
+                        }
+                ).done(function(response){
+                            if(response=="success")
+                            {
+                                window.location.replace(".php");
+                            }
+                            else{
+                                $("#error").empty();
+                                $("#error").append('<div class="alert alert-danger alert-dismissable"><button type=button class=close data-dismiss=alert aria-hidden=true>&times;</button><strong>Error!</strong> Usuario o Contrase&ntilde;a Incorrectos</div>');
+                            }
+                        }).fail(function(){
+                            $("#error").empty();
+                            $("#error").append('<div class="alert alert-danger alert-dismissable"><button type=button class=close data-dismiss=alert aria-hidden=true>&times;</button><strong>Error!</strong> Usuario o Contrase&ntilde;a Incorrectos</div>');
+                        });
+
+
+            },
 			fields: {
 				usuario: {
 					message: 'Usuario no válido',

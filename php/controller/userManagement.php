@@ -92,3 +92,24 @@ else
 
 
 }
+
+if(isset($_GET["guardar"])){
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $email = $_POST["email"];
+    $nombre = $_POST["nombre"];
+    $paterno = $_POST["apellido-paterno"];
+    $materno = $_POST["apellido-materno"];
+
+
+    $usuario_n = new Usuario();
+    $usuario_n->setUsername($username);
+    $usuario_n->setPassword($password);
+    $usuario_n->getUserData()->setEmail($email);
+    $usuario_n->getUserData()->setApellidop($apellidop);
+    $usuario_n->getUserData()->setApellidom($apellidom);
+    $usuario_n->setPriviliges(2);
+
+
+    $usuario_n->createNewUser();
+}
