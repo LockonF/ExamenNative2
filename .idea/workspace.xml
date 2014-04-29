@@ -30,12 +30,69 @@
       <file leaf-file-name="Usuario.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/model/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="371" column="0" selection-start="8908" selection-end="8908" vertical-scroll-proportion="-8.458333" vertical-offset="5287" max-vertical-offset="5670">
+            <state line="8" column="12" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="5670">
               <folding>
-                <marker date="1398738980000" expanded="true" signature="4090:4166" placeholder="Select * fro..Usuario..." />
-                <marker date="1398738980000" expanded="true" signature="5171:5271" placeholder="Select * fro..Usuario..." />
-                <marker date="1398738980000" expanded="true" signature="5402:5549" placeholder="Select * fro..Usuario..." />
-                <marker date="1398738980000" expanded="true" signature="5718:5818" placeholder="Select * fro..Usuario..." />
+                <marker date="1398746152000" expanded="true" signature="4095:4171" placeholder="Select * fro..Usuario..." />
+                <marker date="1398746152000" expanded="true" signature="5176:5276" placeholder="Select * fro..Usuario..." />
+                <marker date="1398746152000" expanded="true" signature="5407:5554" placeholder="Select * fro..Usuario..." />
+                <marker date="1398746152000" expanded="true" signature="5723:5823" placeholder="Select * fro..Usuario..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Zebra_DB.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="-5.1666665" vertical-offset="176" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getPreguntas.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/controller/getPreguntas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="78" selection-start="670" selection-end="670" vertical-scroll-proportion="-0.34" vertical-offset="373" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listmaterias.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/controller/listmaterias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="27" selection-start="144" selection-end="144" vertical-scroll-proportion="1.7307693" vertical-offset="210" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluador.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/controller/evaluador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="19" selection-start="207" selection-end="231" vertical-scroll-proportion="-1.7916666" vertical-offset="167" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Materia.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/model/Materia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="3" selection-start="93" selection-end="138" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Examen.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/model/Examen.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="-5.0" vertical-offset="375" max-vertical-offset="3750">
+              <folding>
+                <marker date="1398746146000" expanded="true" signature="1298:1339" placeholder="SELECT MAX(i..examen..." />
+                <marker date="1398746146000" expanded="true" signature="2507:2704" placeholder="SELECT P.ora..Pregunta..." />
               </folding>
             </state>
           </provider>
@@ -44,7 +101,7 @@
       <file leaf-file-name="Session.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/model/Session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="14" selection-start="645" selection-end="690" vertical-scroll-proportion="-1.5" vertical-offset="639" max-vertical-offset="1035">
+            <state line="63" column="56" selection-start="966" selection-end="966" vertical-scroll-proportion="2.6410255" vertical-offset="1151" max-vertical-offset="2250">
               <folding>
                 <element signature="e#6#92#0" expanded="true" />
               </folding>
@@ -52,30 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/controller/session.php">
+      <file leaf-file-name="materias.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/materias.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="125" selection-end="125" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-              <folding>
-                <element signature="e#6#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Materia.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/model/Materia.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="3" selection-start="93" selection-end="138" vertical-scroll-proportion="116.541664" vertical-offset="2902" max-vertical-offset="3285">
+            <state line="76" column="0" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.83519554" vertical-offset="841" max-vertical-offset="5955">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Usuario_Datos.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/model/Usuario_Datos.php">
+      <file leaf-file-name="obtenerEval.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/controller/obtenerEval.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="6.932115" vertical-offset="0" max-vertical-offset="3795">
+            <state line="39" column="29" selection-start="1197" selection-end="1197" vertical-scroll-proportion="-1.8076923" vertical-offset="444" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -135,9 +181,6 @@
         <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/view/index.html" />
-        <option value="$PROJECT_DIR$/php/controller/getPreguntas.php" />
-        <option value="$PROJECT_DIR$/php/controller/listmaterias.php" />
-        <option value="$PROJECT_DIR$/php/controller/obtenerEval.php" />
         <option value="$PROJECT_DIR$/php/controller/evaluador.php" />
         <option value="$PROJECT_DIR$/js/vallenato/vallenato.js" />
         <option value="$PROJECT_DIR$/js/jquery-ui/Flotante.js" />
@@ -150,13 +193,11 @@
         <option value="$PROJECT_DIR$/view/preguntas.php" />
         <option value="$PROJECT_DIR$/css/style9.css" />
         <option value="$PROJECT_DIR$/css/demo.css" />
-        <option value="$PROJECT_DIR$/js/materias.js" />
         <option value="$PROJECT_DIR$/view/js/gestion-usuarios.js" />
         <option value="$PROJECT_DIR$/view/js/validaciones.js" />
         <option value="$PROJECT_DIR$/view/Scripts/formaUsuario.html" />
         <option value="$PROJECT_DIR$/view/forma-Usuario.html" />
         <option value="$PROJECT_DIR$/php/model/Materia.php" />
-        <option value="$PROJECT_DIR$/php/model/Examen.php" />
         <option value="$PROJECT_DIR$/php/composer.json" />
         <option value="$PROJECT_DIR$/php/model/Zebra_DB.php" />
         <option value="$PROJECT_DIR$/php/vendor/composer/autoload_classmap.php" />
@@ -167,13 +208,18 @@
         <option value="$PROJECT_DIR$/php/controller/login.php" />
         <option value="$PROJECT_DIR$/view/gestion-usuarios.html" />
         <option value="$PROJECT_DIR$/php/controller/userManagement.php" />
-        <option value="$PROJECT_DIR$/php/model/Usuario.php" />
         <option value="$PROJECT_DIR$/php/controller/sessionHandler.php" />
         <option value="$PROJECT_DIR$/php/model/SessionHandler.php" />
         <option value="$PROJECT_DIR$/view/examen.php" />
-        <option value="$PROJECT_DIR$/php/model/Session.php" />
         <option value="$PROJECT_DIR$/php/model/Usuario_Datos.php" />
         <option value="$PROJECT_DIR$/php/controller/session.php" />
+        <option value="$PROJECT_DIR$/php/model/Examen.php" />
+        <option value="$PROJECT_DIR$/php/model/Usuario.php" />
+        <option value="$PROJECT_DIR$/php/controller/getPreguntas.php" />
+        <option value="$PROJECT_DIR$/php/controller/obtenerEval.php" />
+        <option value="$PROJECT_DIR$/php/controller/listmaterias.php" />
+        <option value="$PROJECT_DIR$/php/model/Session.php" />
+        <option value="$PROJECT_DIR$/js/materias.js" />
       </list>
     </option>
   </component>
@@ -320,6 +366,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExamenNative" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExamenNative2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -461,7 +521,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16616315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16558966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31707317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -525,15 +585,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="100" />
+      <option name="time" value="108" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/acercade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2490" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="73" selection-start="999" selection-end="999" vertical-scroll-proportion="-1.7554806" vertical-offset="1416" max-vertical-offset="2520" />
@@ -596,11 +651,6 @@
         <state line="7" column="30" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1513" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/evaluador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="207" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="540" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/backbone-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
@@ -659,13 +709,6 @@
     <entry file="file://$PROJECT_DIR$/view/forma-Usuario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="231" column="7" selection-start="9364" selection-end="9364" vertical-scroll-proportion="0.0" vertical-offset="3159" max-vertical-offset="3555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/materias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="0" selection-start="5863" selection-end="5863" vertical-scroll-proportion="0.0" vertical-offset="2947" max-vertical-offset="5925">
           <folding />
         </state>
       </provider>
@@ -788,27 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/getPreguntas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="199" selection-end="208" vertical-scroll-proportion="0.03787879" vertical-offset="90" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="22" selection-start="406" selection-end="449" vertical-scroll-proportion="0.530303" vertical-offset="0" max-vertical-offset="1485">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Examen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="30" selection-start="5037" selection-end="5037" vertical-scroll-proportion="-49.375" vertical-offset="2220" max-vertical-offset="3750">
-          <folding>
-            <marker date="1398734794000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..examen..." />
-            <marker date="1398734794000" expanded="true" signature="-1:-1" placeholder="SELECT P.ora..Pregunta..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,30 +850,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/obtenerEval.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="1055" selection-end="1060" vertical-scroll-proportion="1.3138889" vertical-offset="22" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="93" selection-end="125" vertical-scroll-proportion="0.28150135" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/examen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.07832898" vertical-offset="0" max-vertical-offset="3015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.75757575" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
@@ -859,19 +864,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/controller/listmaterias.php">
+    <entry file="file://$PROJECT_DIR$/php/model/Usuario_Datos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="38" selection-end="69" vertical-scroll-proportion="-0.6439394" vertical-offset="285" max-vertical-offset="750">
+        <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="31.541666" vertical-offset="3412" max-vertical-offset="3795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Session.php">
+    <entry file="file://$PROJECT_DIR$/php/controller/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="14" selection-start="645" selection-end="690" vertical-scroll-proportion="-1.5" vertical-offset="639" max-vertical-offset="1035">
-          <folding>
-            <element signature="e#6#92#0" expanded="true" />
-          </folding>
+        <state line="7" column="5" selection-start="93" selection-end="125" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="495">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,33 +882,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="31" selection-start="125" selection-end="125" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
           <folding>
-            <element signature="e#6#92#0" expanded="true" />
+            <element signature="e#6#92#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/model/Materia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="93" selection-end="138" vertical-scroll-proportion="116.541664" vertical-offset="2902" max-vertical-offset="3285">
+        <state line="7" column="3" selection-start="93" selection-end="138" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/model/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="371" column="0" selection-start="8908" selection-end="8908" vertical-scroll-proportion="-8.458333" vertical-offset="5287" max-vertical-offset="5670">
+        <state line="8" column="12" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="5670">
           <folding>
-            <marker date="1398738980000" expanded="true" signature="4090:4166" placeholder="Select * fro..Usuario..." />
-            <marker date="1398738980000" expanded="true" signature="5171:5271" placeholder="Select * fro..Usuario..." />
-            <marker date="1398738980000" expanded="true" signature="5402:5549" placeholder="Select * fro..Usuario..." />
-            <marker date="1398738980000" expanded="true" signature="5718:5818" placeholder="Select * fro..Usuario..." />
+            <marker date="1398746152000" expanded="true" signature="4095:4171" placeholder="Select * fro..Usuario..." />
+            <marker date="1398746152000" expanded="true" signature="5176:5276" placeholder="Select * fro..Usuario..." />
+            <marker date="1398746152000" expanded="true" signature="5407:5554" placeholder="Select * fro..Usuario..." />
+            <marker date="1398746152000" expanded="true" signature="5723:5823" placeholder="Select * fro..Usuario..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/model/Usuario_Datos.php">
+    <entry file="file://$PROJECT_DIR$/php/model/Examen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="39" selection-start="2891" selection-end="2891" vertical-scroll-proportion="6.932115" vertical-offset="0" max-vertical-offset="3795">
+        <state line="33" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="-5.0" vertical-offset="375" max-vertical-offset="3750">
+          <folding>
+            <marker date="1398746146000" expanded="true" signature="1298:1339" placeholder="SELECT MAX(i..examen..." />
+            <marker date="1398746146000" expanded="true" signature="2507:2704" placeholder="SELECT P.ora..Pregunta..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/model/Zebra_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="-5.1666665" vertical-offset="176" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/controller/evaluador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="207" selection-end="231" vertical-scroll-proportion="-1.7916666" vertical-offset="167" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/controller/obtenerEval.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="29" selection-start="1197" selection-end="1197" vertical-scroll-proportion="-1.8076923" vertical-offset="444" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/controller/getPreguntas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="78" selection-start="670" selection-end="670" vertical-scroll-proportion="-0.34" vertical-offset="373" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/controller/listmaterias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="27" selection-start="144" selection-end="144" vertical-scroll-proportion="1.7307693" vertical-offset="210" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/model/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="56" selection-start="966" selection-end="966" vertical-scroll-proportion="2.6410255" vertical-offset="1151" max-vertical-offset="2250">
+          <folding>
+            <element signature="e#6#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/materias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.83519554" vertical-offset="841" max-vertical-offset="5955">
           <folding />
         </state>
       </provider>

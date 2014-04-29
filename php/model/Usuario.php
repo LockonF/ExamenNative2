@@ -6,7 +6,7 @@
  * Time: 15:28
  */
 
-require "Zebra_DB.php";
+require_once "Zebra_DB.php";
 
 class Usuario {
     /**

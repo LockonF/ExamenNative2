@@ -6,7 +6,7 @@
  * Time: 09:53
  */
 require __DIR__ . "../../vendor/autoload.php";
-require "Zebra_DB.php";
+require_once "Zebra_DB.php";
 
 class Examen{
 

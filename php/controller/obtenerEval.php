@@ -7,8 +7,11 @@
  */
 require '../model/Examen.php';
 require "../model/Materia.php";
-session_start();
-$examen = $_SESSION["examen"];
+require '../model/Session.php';
+
+
+$examen = Session::getExamenFromSession();
+
 $flag = $_GET["flag"];
 
     $json2=$examen->getJustificaciones();
@@ -28,8 +31,14 @@ $flag = $_GET["flag"];
     }
 
 
+    /*
+     * Reestablecemos las variables, el examen se va a nulo
+     * la sesion activa se va a falso y el examen generado a falso
+     */
 
-    unset($_SESSION["examen"]);
-    unset($_SESSION["active"]);
+    Session::unsetExam();
+    Session::setExamenActive(false);
+    Session::setExamenGenerated(false);
+
     echo json_encode($json);
 

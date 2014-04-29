@@ -73,6 +73,8 @@ function evalua(event)
             data:{"json":json,"save":1},
             success:getEvaluacion
         });
+    $("#CountDownTimer").TimeCircles().stop();
+
 }
 
 

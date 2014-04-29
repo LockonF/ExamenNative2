@@ -1,16 +1,17 @@
 <?PHP
-require '../model/Materia.php';
-require '../model/Examen.php';
-session_start();
+require_once '../model/Materia.php';
+require_once '../model/Examen.php';
+require_once '../model/Session.php';
 
-unset($_SESSION['examen']);
-$_SESSION['active']=0;
-
+if(!Session::isExamenActive())
+{
+    Session::unsetExam();
+}
 
 /*
  * Si no tenemos sesión de examen, entonces generamos un nuevo examen
  */
-if(!(isset($_SESSION['examen'])))
+if(!Session::isExamenSet())
 {
     $_SESSION["numPasos"]=0;
     $lista=Materia::listMaterias();
@@ -27,7 +28,13 @@ if(!(isset($_SESSION['examen'])))
     $examen->setMaterias($listaMatExamen);
     $examen->setListaJson($lista);
     $_SESSION['examen']=$examen;
-    $_SESSION["active"]=null;
+
+    /*
+     * Al momento de generar las materias ponemos un examen activo pero que todavia no se ha acabado
+     * de generar
+    */
+    Session::setExamenActive(true);
+    Session::setExamenGenerated(false);
     Materia::toJson($lista);
 }
 else{

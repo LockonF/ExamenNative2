@@ -60,5 +60,86 @@ class Session {
     }
 
 
+    /*
+     * Manejo de sesiones para la generacion de examenes
+     */
+
+
+
+    /**
+     * @params bool boolean
+     */
+
+    public static function setExamenActive($boolean)
+    {
+        $_SESSION['active']=$boolean;
+    }
+
+    /**
+     * @return void
+     */
+
+    public static function unsetExam()
+    {
+        unset($_SESSION['examen']);
+    }
+
+    /**
+     * @return bool
+     */
+    public static function isExamenSet()
+    {
+        if(isset($_SESSION['examen']))
+        {
+            return true;
+        }
+        else return false;
+    }
+
+    /**
+     * @return bool
+     */
+
+    public static function isExamenActive()
+    {
+        if(isset($_SESSION['active']))
+        {
+            if($_SESSION['active']==true)
+                return true;
+        }
+        return false;
+    }
+
+    /**
+     * @return Examen
+     */
+
+    public static function  getExamenFromSession()
+    {
+        return $_SESSION['examen'];
+    }
+
+    /**
+     * @return void
+     */
+
+    public static function setExamenGenerated($boolean)
+    {
+        $_SESSION['finished']=$boolean;
+    }
+
+    /**
+     * @return bool
+     */
+
+    public static function isExamenGenerated()
+    {
+        if(isset($_SESSION['finished']))
+        {
+            if($_SESSION['finished']==true)
+                return true;
+        }
+        else return false;
+    }
 
 }

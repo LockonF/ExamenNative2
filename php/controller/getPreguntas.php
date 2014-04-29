@@ -8,23 +8,34 @@
 
 require_once "../model/Materia.php";
 require "../model/Examen.php";
-session_start();
+require_once "../model/Session.php";
+
+
 
 $idLookup = $_GET['idMateria'];
-$examen = $_SESSION["examen"];
+$examen = Session::getExamenFromSession();
 
-$activeTest = $_SESSION["active"];
-if(!isset($activeTest))
+/*
+ * Su nuestro examen aun no se ha generado procedemos
+ * a hacer todo el desastre
+ */
+
+if(!Session::isExamenGenerated())
 {
 
     $examen->lookupMateria($idLookup)->genPreguntas();
     $materia=$examen->lookupMateria($idLookup);
     Materia::toJson($materia->getPreguntas());
     $_SESSION["numPasos"]++;
+
+    /*
+     *Hacemos los pasos de la generacion del examen y lo ponemos como generado
+     */
+
     if($_SESSION["numPasos"]==count($examen->getMaterias()))
     {
-        $_SESSION["active"]=1;
         $_SESSION["examen"]=$examen;
+        Session::setExamenGenerated(true);
     }
 }
 else
