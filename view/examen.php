@@ -97,7 +97,7 @@ if(!Session::isAuthenticated())
                             </div>
                         </a>                    </li>
                     <li>
-                        <a href="index.html">
+                        <a href="gestion-usuarios.html">
                             <span class="ca-icon">S</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Gesti&oacute;n</h2>
