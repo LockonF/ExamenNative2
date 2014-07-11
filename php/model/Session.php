@@ -50,6 +50,33 @@ class Session {
         return false;
     }
 
+
+    /**
+     * @return boolean
+     */
+    public static function login($username,$pass)
+    {
+        if(isset($username) && isset($pass))
+        {
+            try{
+                $db=new Zebra_DB();
+                $db=$db->getDBObject();
+                $hash=$db->dlookup("password","Usuario","username=?",array($username));
+                $db->close();
+                if(PHPassLib\Hash\BCrypt::verify($pass,$hash))
+                {
+                    $_SESSION["username"]=$username;
+                    return true;
+                }
+            }catch (Exception $e)
+            {
+                $e->getMessage();
+            }
+        }
+        return false;
+    }
+
+
     /**
      * @return void
      */
@@ -57,6 +84,7 @@ class Session {
     public static function logout()
     {
         session_unset();
+
     }
 
 
@@ -116,7 +144,16 @@ class Session {
 
     public static function  getExamenFromSession()
     {
-        return $_SESSION['examen'];
+        return unserialize($_SESSION['examen']);
+    }
+
+    /**
+     * @params Examen $examen
+     * @return void
+     */
+    public static function  setExamenToSession($examen)
+    {
+        $_SESSION['examen'] = serialize($examen);
     }
 
     /**

@@ -7,11 +7,12 @@
  */
 require "../model/Examen.php";
 require "../model/Materia.php";
+require "../model/Session.php";
 
 
 session_start();
 
-$examen = $_SESSION["examen"];
+$examen = Session::getExamenFromSession();
 $examen->cleanExamen();
 
 
@@ -20,6 +21,7 @@ for($j=0;$j<count($arr);$j++)
 {
     $examen->evaluatePregunta($arr[$j]["idPregunta"],$arr[$j]["opcSelec"]);
 }
+Session::setExamenToSession($examen);
 if($_POST['save'])
 {
     $examen->submitToDB();

@@ -333,29 +333,6 @@ class Usuario {
         return null;
     }
 
-    /**
-     * @return boolean
-     */
-     public static function login($username,$pass)
-     {
-         if(isset($username) && isset($pass))
-         {
-             try{
-
-
-             $db=new Zebra_DB();
-             $db=$db->getDBObject();
-             $hash=$db->dlookup("password","Usuario","username=?",array($username));
-             $db->close();
-             if(PHPassLib\Hash\BCrypt::verify($pass,$hash))
-                 return true;
-             }catch (Exception $e)
-             {
-                 $e->getMessage();
-             }
-         }
-         return false;
-     }
 
     /**
      * @return int

@@ -27,7 +27,8 @@ if(!Session::isExamenSet())
     }
     $examen->setMaterias($listaMatExamen);
     $examen->setListaJson($lista);
-    $_SESSION['examen']=$examen;
+    Session::setExamenToSession($examen);
+
 
     /*
      * Al momento de generar las materias ponemos un examen activo pero que todavia no se ha acabado
@@ -38,8 +39,7 @@ if(!Session::isExamenSet())
     Materia::toJson($lista);
 }
 else{
-
-    $examen = $_SESSION["examen"];
+    $examen = Session::getExamenFromSession();
     Materia::toJson($examen->getListaJson());
 
 }

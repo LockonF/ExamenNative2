@@ -64,17 +64,15 @@ function evalua(event)
 
     })
     var json= JSON.stringify(arr, null, 2);
-    //console.log(json);
     var request=$.ajax(
         {
             type:"POST",
             dataType:"json",
             url:"../php/controller/evaluador.php",
-            data:{"json":json,"save":1},
-            success:getEvaluacion
+            data:{"json":json,"save":1}
         });
     $("#CountDownTimer").TimeCircles().stop();
-
+    getEvaluacion();
 }
 
 
@@ -87,7 +85,7 @@ function getEvaluacion()
         sugerencia = sugerencia general
         justificaciones = [arreglo de objetos]
      */
-
+    console.log("Evaluacion ya");
     var data=$.getJSON("../php/controller/obtenerEval.php","flag=1",function(data){
         var aciertos=$("#footerleft");
         aciertos.append("<h2>Tus aciertos son:"+data.aciertos+"</h2>");
@@ -101,23 +99,19 @@ function getEvaluacion()
             Iteramos el arreglo de materias, que a su vez tiene
             un arreglo de justificaciones
          */
-
         $.each(data.justificaciones,function(key,val)
         {
-            //console.log(val);
+            console.log(val);
             if(val!=null)
             {
 
-                $.each(val,function(key2,val2)
-                {
                     var accordion=$("#accordion");
-                    accordion.append("<h3>Pregunta: "+val2.id+"</h3>");
+                    accordion.append("<h3>Pregunta: "+val.id+"</h3>");
                     var div=$("<div></div>");
-                    div.append("<h2><strong>Oraci&oacute;n:</strong> "+val2.oracion+"</h2><br>");
-                    div.append("<h2><strong>Respuesta correcta:</strong> "+val2.opcc+"</h2><br>");
-                    div.append("<h2><strong>Justificaci&oacute;n:</strong> "+val2.just+"</h2><br>");
+                    div.append("<h2><strong>Oraci&oacute;n:</strong> "+val.oracion+"</h2><br>");
+                    div.append("<h2><strong>Respuesta correcta:</strong> "+val.opcc+"</h2><br>");
+                    div.append("<h2><strong>Justificaci&oacute;n:</strong> "+val.just+"</h2><br>");
                     accordion.append(div);
-                });
             }
         });
         /*

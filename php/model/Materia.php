@@ -6,7 +6,7 @@
  * Time: 18:53
  */
 require __DIR__ . "../../vendor/autoload.php";
-
+require "Pregunta.php";
 class Materia
 {
 
@@ -14,7 +14,6 @@ class Materia
     private $numPreguntas;
     private $correctas;
     private $incorrectas;
-    private $justificaciones;
     private $nombre;
     private $db;
     private $idMateria;
@@ -52,22 +51,6 @@ class Materia
     }
 
     /**
-     * @param array $justificaciones
-     */
-    public function setJustificaciones($justificaciones)
-    {
-        $this->justificaciones = $justificaciones;
-    }
-
-    /**
-     * @return array
-     */
-    public function getJustificaciones()
-    {
-        return $this->justificaciones;
-    }
-
-    /**
      * @param mixed $nombre
      */
     public function setNombre($nombre)
@@ -100,13 +83,26 @@ class Materia
     }
 
     /**
-     * @return array
+     * @return Pregunta []
      */
     public function getPreguntas()
     {
         return $this->preguntas;
     }
 
+    /**
+     * @return array
+     */
+    public function getPreguntasJSON()
+    {
+        $json = array();
+        foreach($this->getPreguntas() as $pregunta)
+        {
+            $json[]=array("Materia"=>$this->idMateria,"idPregunta" => $pregunta->getIdPregunta(), 'oracion' => $pregunta->getOracion(), "opc1" => $pregunta->getOpc1(),
+                "opc2" => $pregunta->getOpc2(), "opc3" => $pregunta->getOpc3(), "opc4" => $pregunta->getOpc4(),"grafico"=>$pregunta->getGrafico());
+        }
+        return json_encode($json);
+    }
 
 
     /**
@@ -128,7 +124,6 @@ class Materia
         $this->preguntas = array();
         $this->correctas = 0;
         $this->incorrectas = 0;
-        $this->justificaciones = array();
     }
 
     function __destruct()
@@ -153,6 +148,8 @@ class Materia
         try {
             $this->initializeDB();
             $this->preguntas=null;
+            $this->preguntas=array();
+
             /*
              * Obtenemos el numero de preguntas a partir de la materia
              */
@@ -162,13 +159,13 @@ class Materia
             /*
              * Realizamos el query a la base de Datos para seleccionar las preguntas
              */
-            $query="SELECT P.idPregunta as idPregunta, P.Oracion as oracion, P.opc1 as opc1,P.opc2 as opc2,P.opc3 as opc3,P.opc4 as opc4,P.grafico as grafico from Pregunta P join Tema T on P.tema=T.idTema join Materia M on M.idMateria=T.idMateria
+            $query="SELECT P.idPregunta as idPregunta, P.Oracion as oracion, P.opc1 as opc1,P.opc2 as opc2,P.opc3 as opc3,P.opc4 as opc4, P.opcc as opcc,P.grafico as grafico,P.just as just from pregunta P join Tema T on P.tema=T.idTema join Materia M on M.idMateria=T.idMateria
 where M.idMateria=".$criteriaMateria." order by rand() limit ".$numPreguntas.";";
             $this->db->query($query);
             while($row=$this->db->fetch_assoc())
             {
-                $this->preguntas[] = array("Materia"=>$this->idMateria,"idPregunta" => $row['idPregunta'], 'oracion' => $row['oracion'], "opc1" => $row['opc1'],
-                    "opc2" => $row['opc2'], "opc3" => $row['opc3'], "opc4" => $row['opc4'],"grafico"=>$row['grafico']);
+                $this->preguntas[] = Pregunta::constructWithParameters($row["idPregunta"],$row["oracion"],$row["opc1"],$row["opc2"],$row["opc3"],$row["opc4"],$row["opcc"],$row["just"],$row["grafico"]);
+
             }
 
             return true;
@@ -204,6 +201,7 @@ where M.idMateria=".$criteriaMateria." order by rand() limit ".$numPreguntas.";"
      * el primero es el id de la pregunta y el segundo
      * es la opción seleccionada desde la BD
      */
+
 
     public static function toJson($param)
     {

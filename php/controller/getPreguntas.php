@@ -25,7 +25,8 @@ if(!Session::isExamenGenerated())
 
     $examen->lookupMateria($idLookup)->genPreguntas();
     $materia=$examen->lookupMateria($idLookup);
-    Materia::toJson($materia->getPreguntas());
+    $json = $materia->getPreguntasJSON();
+    echo $json;
     $_SESSION["numPasos"]++;
 
     /*
@@ -34,14 +35,16 @@ if(!Session::isExamenGenerated())
 
     if($_SESSION["numPasos"]==count($examen->getMaterias()))
     {
-        $_SESSION["examen"]=$examen;
+        Session::setExamenToSession($examen);
         Session::setExamenGenerated(true);
     }
 }
 else
 {
     $materia=$examen->lookupMateria($idLookup);
-    Materia::toJson($materia->getPreguntas());
+
+    $json= $materia->getPreguntasJSON();
+    echo $json;
 }
 
 

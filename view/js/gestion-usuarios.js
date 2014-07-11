@@ -74,7 +74,7 @@ BuscarUsuariosRender = function(){
 
 	//cargar el template
 	$("#contenedor").html($("#vista-buscar").html())
-    $("#forma-buscar").submit(function(event){
+   $("#forma-buscar").submit(function(event){
         event.preventDefault();
         $.getJSON("../php/controller/userManagement.php", $("#forma-buscar").serialize(),function(response){
             $("#resultados-busqueda").html(render_usuarios(response));

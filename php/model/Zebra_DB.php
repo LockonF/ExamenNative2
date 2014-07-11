@@ -20,7 +20,7 @@ class Zebra_DB
     {
         $this->host="127.0.0.1";
         $this->username="root";
-        $this->password="admin";
+        $this->password="root";
         $this->schema="cics";
         try{
         $this->db= new Zebra_Database();

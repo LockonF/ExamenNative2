@@ -16,8 +16,8 @@ class Examen{
 
     //Objeto de la BD
     private $db;
-
     private $listaJson;
+    private $justificacionesExamen= array();
 
     //Enteros
     private $idExamen;
@@ -142,10 +142,9 @@ class Examen{
         }
         else{
             $materia->setIncorrectas($materia->getIncorrectas()+1);
-            $justificaciones= $materia->getJustificaciones();
+
             $opcc= $db->dlookup("opc".$row["opcc"],"pregunta","idPregunta=?",array($idPreg));
-            $justificaciones[] = array("id"=>$idPreg,"opcc"=>$opcc,"oracion"=>$row["oracion"],"just"=>$row["just"]);
-            $materia->setJustificaciones($justificaciones);
+            $this->justificacionesExamen[] = array("id"=>$idPreg,"opcc"=>$opcc,"oracion"=>$row["oracion"],"just"=>$row["just"]);
         }
     }
 
@@ -154,12 +153,7 @@ class Examen{
      */
 
     public function getJustificaciones(){
-        $justis = array();
-            foreach($this->getMaterias() as $materia)
-            {
-                $justis[]=$materia->getJustificaciones();
-            }
-        return $justis;
+        return $this->justificacionesExamen;
     }
 
     /**
@@ -173,7 +167,7 @@ class Examen{
         {
             $this->getMaterias()[$i]->setCorrectas(0);
             $this->getMaterias()[$i]->setIncorrectas(0);
-            $this->getMaterias()[$i]->setJustificaciones(null);
+            $this->justificacionesExamen= null;
 
         }
     }

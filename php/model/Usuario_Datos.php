@@ -173,8 +173,7 @@ class Usuario_Datos {
     {
         if(isset($username))
         {
-            $db = new Zebra_DB();
-            $db = $db->getDBObject();
+            $db = Zebra_DB::getDBObject();
             $data = $db->dlookup("*","Usuario_datos","idUser = ?",array($username));
             $this->idUser= $data["idUser"];
             $this->nombre= $data["nombre"];
@@ -185,7 +184,6 @@ class Usuario_Datos {
             $this->fechasusc= $data["fechasusc"];
             $this->escuela = $data["escuela"];
             $this->email = $data["email"];
-            $db->close();
         }
     }
 
@@ -195,16 +193,13 @@ class Usuario_Datos {
 
     public function insertDatos()
     {
-           $db =  new Zebra_DB();
-           $db =  $db->getDBObject();
+    $db = Zebra_DB::getDBObject();
            if($db->insert("Usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
            "apellidom"=>$this->apellidom,"fechanac"=>$this->fechanac,"fechareg"=>$this->fechareg, "fechasusc"=>$this->fechasusc,
            "escuela" => $this->escuela, "email"=>$this->email)))
            {
-               $db->close();
                return true;
            }
-            $db->close();
            return false;
     }
 
@@ -214,13 +209,11 @@ class Usuario_Datos {
 
     public  function modifyDatos($username)
     {
-         $db =  new Zebra_DB();
-         $db =  $db->getDBObject();
-         if(($db->update("Usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
+        $db = Zebra_DB::getDBObject();
+        if(($db->update("Usuario_datos",array("idUser"=>$this->idUser, "nombre"=>$this->nombre, "apellidop"=>$this->apellidop,
              "apellidom"=>$this->apellidom,"fechanac"=>$this->fechanac,"fechareg"=>$this->fechareg, "fechasusc"=>$this->fechasusc,
              "escuela" => $this->escuela, "email"=>$this->email),"idUser = ?",array($username))))
          {
-            $db->close();
              return true;
          }
         return false;
@@ -231,11 +224,9 @@ class Usuario_Datos {
      */
     public  function  deleteDatos($username)
     {
-        $db = new Zebra_DB();
-        $db = $db->getDBObject();
+        $db = Zebra_DB::getDBObject();
         if($db->delete("Usuario_datos","idUser = ?",array($username)))
         {
-            $db->close();
             return true;
 
         }
